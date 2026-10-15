@@ -1,0 +1,33 @@
+# --- 模型与运行时（不提交） ---
+model/
+*.safetensors
+*.bin
+*.gguf
+*.onnx
+*.ckpt
+*.pt
+*.pth
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+hf-cache/
+.cache/
+
+# --- 处理中间产物 ---
+output/
+!output/**/*.md
+
+# --- 浏览器调试与日志 ---
+.playwright-mcp/
+*.log
+
+# --- 音频中间产物（仅保留成品 wav 与 Stems mp3） ---
+*.m4a
+*_shadowbuster.wav
+
+# --- 系统文件 ---
+.DS_Store
+Thumbs.db
+desktop.ini
