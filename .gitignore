@@ -15,9 +15,11 @@ __pycache__/
 hf-cache/
 .cache/
 
-# --- 处理中间产物 ---
-output/
-!output/**/*.md
+# --- output 下的非交付中间产物（图片与文档保留） ---
+output/music-analysis/
+output/music-flamingo/
+output/*.py
+output/__pycache__/
 
 # --- 浏览器调试与日志 ---
 .playwright-mcp/

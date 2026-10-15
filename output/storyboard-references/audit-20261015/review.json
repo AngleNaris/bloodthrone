@@ -1,0 +1,1326 @@
+{
+  "title": "绯红王座：全镜参考图审查与三项修订提案",
+  "date": "2026-10-15",
+  "status": "审查完成；修订方案待用户审核，未改动正式参考图、分镜与提示词",
+  "scope": {
+    "active_shots": 56,
+    "historical_images": 8,
+    "visual_review": "现用56镜与历史8图均通过接触表查看；V6角色与重点全身图另行放大复核。静帧只支持视觉判断，不能据此测得真实身高，未作成片动态验证。"
+  },
+  "basis": [
+    "风格.txt",
+    "歌词.srt",
+    "歌词.txt",
+    "output/concept-art/设计说明与提示词.md",
+    "output/storyboard_visuals.py",
+    "output/music-analysis/storyboard.json",
+    "output/music-analysis/music-understanding.json",
+    "output/storyboard-references/manifest.json"
+  ],
+  "proposed_body_rule": "以S23/S45较顺的成年全身比例为参照，设计目标约8头身（按颅顶到下巴估计，不含蓬发、肩领、拖尾）。明确高腰、胯、膝、脚；俯拍降低压缩感；调整人物局部与机位，不做整图纵向拉伸，不统一放大极远景人物。",
+  "proposed_typography": "中文以可读的尖锋宋体字形为骨架，定制碑刻断口、荆棘端点与窄长比例；旧骨白主字、暗酒红错印阴影、轻微磨损和胶片抖动。英文可用哥特Blackletter。形成片名、普通完整唱词、重点大字三个层级；逐镜利用暗墙、地面与窗间留白，避开面部、手、麦克风和特效中心。",
+  "timing_policy": "以现有SRT的57条时间码为基准，使用lyric_overlaps保留跨镜唱词。短句迅速出现，先保证阅读；完整歌词持续可读，关键词负责艺术强调。无词段不补写歌词草稿中的吟唱。字形与动效独立制作，再合成进最终MV画面，并与影像统一做年代质感。",
+  "conflicts": [
+    "既有全局提示词和分镜风格禁止text/captions/lyrics，与本次画内艺术字要求冲突；审核后需更新约束，明确底图与成片合成层用途。",
+    "既有S18只允许飘落与失重暗示；本提案升级为大规模花瀑，需要在正式production中同步更新。",
+    "既有S43仅允许彩窗在地面的投影；悬空玫瑰光影属于新效果，审核后需更新设定，同时继续避免闭合魔法阵。",
+    "SRT唱词与歌词草稿不完全相同；正式排字以SRT为准，文字修订需另确认。"
+  ],
+  "pilot_proposal": [
+    "S09：人体与俯拍校正＋主歌艺术字",
+    "S18：第一副歌花瀑奇观＋副歌完整歌词",
+    "S38：第二副歌巨型悬空玫瑰光影＋高潮排字",
+    "S04：片名艺术字与环境构图"
+  ],
+  "body_summary": {
+    "保留尺度": 6,
+    "无人体可评": 5,
+    "保留": 7,
+    "轮廓优化": 5,
+    "近景不评身高": 14,
+    "构图需复核": 1,
+    "优先修正": 3,
+    "近中景不评身高": 7,
+    "无主角可评": 2,
+    "全身校准": 2,
+    "比例参考": 2,
+    "俯拍需复核": 1,
+    "无全身可评": 1
+  },
+  "shots": [
+    {
+      "id": "S01",
+      "in_tc": "00:00:00:00",
+      "out_tc": "00:00:05:00",
+      "image": "output/storyboard-references/S01-v2.png",
+      "body_review": "保留尺度",
+      "observation": "极远景中的小人用于交代建筑尺度；无法凭此图可靠判断腿长。",
+      "effects_proposal": "建立正常空间，不提前消耗高潮奇观。",
+      "typography_proposal": "序章留白，不放歌词。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S02",
+      "in_tc": "00:00:05:00",
+      "out_tc": "00:00:09:00",
+      "image": "output/storyboard-references/S02-v2.png",
+      "body_review": "无人体可评",
+      "observation": "彩窗与枯玫瑰细节；无需身高处理。",
+      "effects_proposal": "裂纹处少量暗红透光即可。",
+      "typography_proposal": "序章留白，保留细节镜头。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S03",
+      "in_tc": "00:00:09:00",
+      "out_tc": "00:00:15:00",
+      "image": "output/storyboard-references/S03-v2.png",
+      "body_review": "保留",
+      "observation": "坐姿骷髅与远处骨影不按站姿身高校正。",
+      "effects_proposal": "保持环境苏醒，克制。",
+      "typography_proposal": "序章留白。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S04",
+      "in_tc": "00:00:15:00",
+      "out_tc": "00:00:19:19",
+      "image": "output/storyboard-references/S04-v2.png",
+      "body_review": "无人体可评",
+      "observation": "环境镜头；建筑尺度保留。",
+      "effects_proposal": "让月光和薄雾为片名提供显影背景。",
+      "typography_proposal": "片名候选：右侧中上部暗区横排“绯红王座”，避开左侧月光；整镜约4.8秒。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S05",
+      "in_tc": "00:00:19:19",
+      "out_tc": "00:00:22:22",
+      "image": "output/storyboard-references/S05-v2.png",
+      "body_review": "轮廓优化",
+      "observation": "背面拖尾遮住双腿；优先明确腰、臀到脚的垂直关系，不能凭拖尾总长算身高。",
+      "effects_proposal": "保留厚丝绒重量感。",
+      "typography_proposal": "接片名后清空文字，准备进入主歌。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S06",
+      "in_tc": "00:00:22:22",
+      "out_tc": "00:00:26:19",
+      "image": "output/storyboard-references/S06-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "脸部与手部保持V6身份；近景无法判断身高。",
+      "effects_proposal": "以眼神表演为主。",
+      "typography_proposal": "右侧暗墙排两级短句，避开脸、头发和麦克风。",
+      "lyric_overlaps": [
+        {
+          "id": 1,
+          "time": 22.915,
+          "start": 22.915,
+          "end": 24.826999999999998,
+          "text": "烛火摇曳",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 2,
+          "time": 24.826999999999998,
+          "start": 24.826999999999998,
+          "end": 26.789,
+          "text": "是一种诱惑",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "in_tc": "00:00:26:19",
+      "out_tc": "00:00:31:05",
+      "image": "output/storyboard-references/S07-v1.png",
+      "body_review": "无人体可评",
+      "observation": "王座环境镜头。",
+      "effects_proposal": "保持空王座，不加人物幻影抢歌词。",
+      "typography_proposal": "王座上方或侧旁暗区，突出“尘封王座”。",
+      "lyric_overlaps": [
+        {
+          "id": 3,
+          "time": 26.789,
+          "start": 26.789,
+          "end": 28.39,
+          "text": "尘封王座",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 4,
+          "time": 28.39,
+          "start": 28.39,
+          "end": 30.756,
+          "text": "在角落沉默",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "in_tc": "00:00:31:05",
+      "out_tc": "00:00:34:17",
+      "image": "output/storyboard-references/S08-v1.png",
+      "body_review": "构图需复核",
+      "observation": "现图更接近正面三分之二侧，侧面中景要求不够明确；非身高判定镜头。",
+      "effects_proposal": "窗影横过侧脸即可。",
+      "typography_proposal": "右侧暗区两行，随侧面构图重新留白。",
+      "lyric_overlaps": [
+        {
+          "id": 5,
+          "time": 31.227,
+          "start": 31.227,
+          "end": 32.837,
+          "text": "月光稀薄",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 6,
+          "time": 32.837,
+          "start": 32.837,
+          "end": 34.717,
+          "text": "照不亮因果",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "in_tc": "00:00:34:17",
+      "out_tc": "00:00:40:10",
+      "image": "output/storyboard-references/S09-v1.png",
+      "body_review": "优先修正",
+      "observation": "俯视压缩下身，头发与肩领体积突出，腿部在暗色拖尾中消失；视觉上显矮。",
+      "effects_proposal": "倒影保留，避免水面成为第二个完整主角。",
+      "typography_proposal": "上方或左侧空水面排“百年寂寞／酿成了湖泊”；避开实体与倒影。",
+      "lyric_overlaps": [
+        {
+          "id": 7,
+          "time": 34.717,
+          "start": 34.717,
+          "end": 36.912,
+          "text": "百年寂寞",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 8,
+          "time": 36.912,
+          "start": 36.912,
+          "end": 40.407,
+          "text": "酿成了湖泊",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "in_tc": "00:00:40:10",
+      "out_tc": "00:00:44:19",
+      "image": "output/storyboard-references/S10-v1.png",
+      "body_review": "近中景不评身高",
+      "observation": "保留主角身份及后景骨群深度。",
+      "effects_proposal": "影子先于骨群轻动，少量预兆。",
+      "typography_proposal": "主角右侧暗墙排完整短句，“锁”可作较大的尾字。",
+      "lyric_overlaps": [
+        {
+          "id": 9,
+          "time": 40.407,
+          "start": 40.407,
+          "end": 42.6,
+          "text": "时间是一把生锈的锁",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 10,
+          "time": 42.6,
+          "start": 42.6,
+          "end": 44.78,
+          "text": "困住你还是困住了我",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "in_tc": "00:00:44:19",
+      "out_tc": "00:00:49:07",
+      "image": "output/storyboard-references/S11-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "脸部与麦克风关系可保留。",
+      "effects_proposal": "不额外堆粒子。",
+      "typography_proposal": "右侧暗墙；“只有暗夜才真正懂我”需跨切镜延续到S12。",
+      "lyric_overlaps": [
+        {
+          "id": 11,
+          "time": 44.78,
+          "start": 44.78,
+          "end": 47.057,
+          "text": "黎明是一种苍白的罪过",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 12,
+          "time": 47.057,
+          "start": 47.057,
+          "end": 51.356,
+          "text": "只有暗夜才真正懂我",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": true
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "in_tc": "00:00:49:07",
+      "out_tc": "00:00:51:09",
+      "image": "output/storyboard-references/S12-v2.png",
+      "body_review": "无人体可评",
+      "observation": "蜡烛细节镜头，不新增主角。",
+      "effects_proposal": "火焰收窄作停顿。",
+      "typography_proposal": "承接S11歌词至51.356秒，不能因本镜lyrics列表为空而漏字。",
+      "lyric_overlaps": [
+        {
+          "id": 12,
+          "time": 47.057,
+          "start": 47.057,
+          "end": 51.356,
+          "text": "只有暗夜才真正懂我",
+          "source": "歌词.srt",
+          "carried": true,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "in_tc": "00:00:51:09",
+      "out_tc": "00:00:54:02",
+      "image": "output/storyboard-references/S13-v2.png",
+      "body_review": "近景不评身高",
+      "observation": "极近景不调整身高。",
+      "effects_proposal": "可在眼内加极弱一次脉动反光。",
+      "typography_proposal": "“听”只停留0.679秒，单字迅速呈现；后句放右侧留白，不遮眼嘴。",
+      "lyric_overlaps": [
+        {
+          "id": 13,
+          "time": 51.356,
+          "start": 51.356,
+          "end": 52.035,
+          "text": "听",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 14,
+          "time": 52.377,
+          "start": 52.377,
+          "end": 54.065,
+          "text": "心跳的脉搏",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S14",
+      "in_tc": "00:00:54:02",
+      "out_tc": "00:00:58:22",
+      "image": "output/storyboard-references/S14-v1.png",
+      "body_review": "保留",
+      "observation": "骨群有坐站区别，不统一拉高。",
+      "effects_proposal": "骷髅影子开始比本体略先抬头。",
+      "typography_proposal": "右侧暗帘固定位置快速换句；短句不足1.3秒，不做长入场动画。",
+      "lyric_overlaps": [
+        {
+          "id": 15,
+          "time": 54.065,
+          "start": 54.065,
+          "end": 55.179,
+          "text": "神圣的堕落",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 16,
+          "time": 55.179,
+          "start": 55.179,
+          "end": 56.12,
+          "text": "鲜血在闪烁",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 17,
+          "time": 56.12,
+          "start": 56.12,
+          "end": 57.396,
+          "text": "血泊中赤裸",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 18,
+          "time": 57.396,
+          "start": 57.396,
+          "end": 61.734,
+          "text": "灰烬里复活",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": true
+        }
+      ]
+    },
+    {
+      "id": "S15",
+      "in_tc": "00:00:58:22",
+      "out_tc": "00:01:01:18",
+      "image": "output/storyboard-references/S15-v2.png",
+      "body_review": "无主角可评",
+      "observation": "现用v2已去除旧版多余主角，维持。",
+      "effects_proposal": "可扩大先前骨影现象，仍不抢副歌爆点。",
+      "typography_proposal": "继续显示“灰烬里复活”至61.734秒。",
+      "lyric_overlaps": [
+        {
+          "id": 18,
+          "time": 57.396,
+          "start": 57.396,
+          "end": 61.734,
+          "text": "灰烬里复活",
+          "source": "歌词.srt",
+          "carried": true,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S16",
+      "in_tc": "00:01:01:18",
+      "out_tc": "00:01:05:22",
+      "image": "output/storyboard-references/S16-v1.png",
+      "body_review": "全身校准",
+      "observation": "低位全身已较修长，可用作辅助；脚部贴近画面下沿，修订时留完整足部。",
+      "effects_proposal": "作为花瓣逆升奇观的起势，人物保持接地。",
+      "typography_proposal": "右侧暗墙分句排，强调“坠落”但控制总字量。",
+      "lyric_overlaps": [
+        {
+          "id": 19,
+          "time": 61.734,
+          "start": 61.734,
+          "end": 63.7,
+          "text": "在那猩红夜色",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 20,
+          "time": 63.7,
+          "start": 63.7,
+          "end": 65.9,
+          "text": "旋转着坠落",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S17",
+      "in_tc": "00:01:05:22",
+      "out_tc": "00:01:10:03",
+      "image": "output/storyboard-references/S17-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "保留脸与手。",
+      "effects_proposal": "副歌近景作为奇观之间的情绪回落。",
+      "typography_proposal": "右侧暗区两行，不覆盖尖耳与麦克风。",
+      "lyric_overlaps": [
+        {
+          "id": 21,
+          "time": 65.9,
+          "start": 65.9,
+          "end": 68.1,
+          "text": "亲吻你的轮廓",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 22,
+          "time": 68.1,
+          "start": 68.1,
+          "end": 70.14,
+          "text": "冰冷且脆弱",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S18",
+      "in_tc": "00:01:10:03",
+      "out_tc": "00:01:13:16",
+      "image": "output/storyboard-references/S18-v1.png",
+      "body_review": "轮廓优化",
+      "observation": "小比例人物腿部被外衣覆盖，需细化站立轮廓；不把远景小人等同于矮。",
+      "effects_proposal": "第一主奇观：暗红花瓣从地面逆升，形成贯穿回廊高度的巨型倒流花瀑；一个清晰方向。",
+      "typography_proposal": "右侧暗墙大字“华丽的灾祸”，完整句配较小文字，随SRT同步呈现。",
+      "lyric_overlaps": [
+        {
+          "id": 23,
+          "time": 70.14,
+          "start": 70.14,
+          "end": 73.68,
+          "text": "是一场永恒的华丽的灾祸",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S19",
+      "in_tc": "00:01:13:16",
+      "out_tc": "00:01:18:18",
+      "image": "output/storyboard-references/S19-v1.png",
+      "body_review": "近中景不评身高",
+      "observation": "伸手透视需保持手不过大。",
+      "effects_proposal": "保留人物与骷髅关系。",
+      "typography_proposal": "靠右空区突出“看着我”，不遮伸出的爪手。",
+      "lyric_overlaps": [
+        {
+          "id": 24,
+          "time": 73.68,
+          "start": 73.68,
+          "end": 75.86,
+          "text": "别闪躲看着我",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 25,
+          "time": 75.86,
+          "start": 75.86,
+          "end": 78.734,
+          "text": "并没有所谓对错",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S20",
+      "in_tc": "00:01:18:18",
+      "out_tc": "00:01:23:07",
+      "image": "output/storyboard-references/S20-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "高音表演保留。",
+      "effects_proposal": "用逆升花瓣的反光衔接，不增加第二套特效。",
+      "typography_proposal": "无词音节用简短易读拉丁艺术字；整条内容分组但不改唱词。",
+      "lyric_overlaps": [
+        {
+          "id": 26,
+          "time": 78.734,
+          "start": 78.734,
+          "end": 87.931,
+          "text": "Woah-oh-oh-oh, Ah-ee-yah!",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": true
+        }
+      ]
+    },
+    {
+      "id": "S21",
+      "in_tc": "00:01:23:07",
+      "out_tc": "00:01:27:22",
+      "image": "output/storyboard-references/S21-v1.png",
+      "body_review": "优先修正",
+      "observation": "俯拍使头肩突出、身体呈短锥形；需减小俯角并读出下身，不靠增大人物解决。",
+      "effects_proposal": "延续S18同一股花瓣逆流，不生成闭合魔法阵。",
+      "typography_proposal": "延续Woah/Ah音节至87.931秒，字放空地边缘。",
+      "lyric_overlaps": [
+        {
+          "id": 26,
+          "time": 78.734,
+          "start": 78.734,
+          "end": 87.931,
+          "text": "Woah-oh-oh-oh, Ah-ee-yah!",
+          "source": "歌词.srt",
+          "carried": true,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S22",
+      "in_tc": "00:01:27:22",
+      "out_tc": "00:01:32:21",
+      "image": "output/storyboard-references/S22-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "人物表情可保留。",
+      "effects_proposal": "奇观逐步收束。",
+      "typography_proposal": "右侧暗墙排长短两级字，保证“你和”有充足辨认时间。",
+      "lyric_overlaps": [
+        {
+          "id": 27,
+          "time": 87.931,
+          "start": 87.931,
+          "end": 90.087,
+          "text": "在这废墟之上 只有",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 28,
+          "time": 90.087,
+          "start": 90.087,
+          "end": 92.893,
+          "text": "你和",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S23",
+      "in_tc": "00:01:32:21",
+      "out_tc": "00:01:37:12",
+      "image": "output/storyboard-references/S23-v1.png",
+      "body_review": "比例参考",
+      "observation": "正面全身腰腿与鞋较清楚，比例相对顺，优先作为修正参考。",
+      "effects_proposal": "手势延续即可。",
+      "typography_proposal": "“我”仅92.893–93.423秒；结束后清空有词文字。",
+      "lyric_overlaps": [
+        {
+          "id": 29,
+          "time": 92.893,
+          "start": 92.893,
+          "end": 93.423,
+          "text": "我",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S24",
+      "in_tc": "00:01:37:12",
+      "out_tc": "00:01:43:00",
+      "image": "output/storyboard-references/S24-v1.png",
+      "body_review": "保留尺度",
+      "observation": "高处俯看下方小人不做统一放大。",
+      "effects_proposal": "器乐连接可保留极弱花瓣余流。",
+      "typography_proposal": "纯器乐留白。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S25",
+      "in_tc": "00:01:43:00",
+      "out_tc": "00:01:49:16",
+      "image": "output/storyboard-references/S25-v1.png",
+      "body_review": "保留",
+      "observation": "一坐一站骨架按姿态区分。",
+      "effects_proposal": "骨群起身动作可保留。",
+      "typography_proposal": "纯器乐留白。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S26",
+      "in_tc": "00:01:49:16",
+      "out_tc": "00:01:53:19",
+      "image": "output/storyboard-references/S26-v1.png",
+      "body_review": "近中景不评身高",
+      "observation": "中景保持躯干与肩宽一致。",
+      "effects_proposal": "窗上蝙蝠影子短促掠过，作为次级效果。",
+      "typography_proposal": "右侧暗区固定换句；快句阶段避免整段字移动。",
+      "lyric_overlaps": [
+        {
+          "id": 30,
+          "time": 109.661,
+          "start": 109.661,
+          "end": 111.899,
+          "text": "蝙蝠划破虚伪的规则",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 31,
+          "time": 111.899,
+          "start": 111.899,
+          "end": 113.8,
+          "text": "谁在饥渴救赎的角色",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S27",
+      "in_tc": "00:01:53:19",
+      "out_tc": "00:01:58:04",
+      "image": "output/storyboard-references/S27-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "保留面部特征。",
+      "effects_proposal": "脸和牙尖承担视觉重点。",
+      "typography_proposal": "右侧暗区排歌词，少量刻蚀边缘。",
+      "lyric_overlaps": [
+        {
+          "id": 32,
+          "time": 113.8,
+          "start": 113.8,
+          "end": 116.289,
+          "text": "美丽皮囊褪去了颜色",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 33,
+          "time": 116.289,
+          "start": 116.289,
+          "end": 118.18,
+          "text": "贪婪灵魂才是最赤裸",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S28",
+      "in_tc": "00:01:58:04",
+      "out_tc": "00:02:02:21",
+      "image": "output/storyboard-references/S28-v1.png",
+      "body_review": "无主角可评",
+      "observation": "骨架姿态与环境图无需主角身高修改。",
+      "effects_proposal": "局部花瓣化灰，连接前段花瓣系统。",
+      "typography_proposal": "远离左侧火焰，在上方暗区排字。",
+      "lyric_overlaps": [
+        {
+          "id": 34,
+          "time": 118.18,
+          "start": 118.18,
+          "end": 120.4,
+          "text": "信仰烈火烧成了粉末",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 35,
+          "time": 120.4,
+          "start": 120.4,
+          "end": 122.866,
+          "text": "谁在执着所谓的对错",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S29",
+      "in_tc": "00:02:02:21",
+      "out_tc": "00:02:08:19",
+      "image": "output/storyboard-references/S29-v1.png",
+      "body_review": "近中景不评身高",
+      "observation": "低位中景保持下颌与肩领关系。",
+      "effects_proposal": "胸前玫瑰投出短暂异常大影，作为预告。",
+      "typography_proposal": "右侧暗墙排完整句，强调“恶魔／漩涡”。",
+      "lyric_overlaps": [
+        {
+          "id": 36,
+          "time": 122.866,
+          "start": 122.866,
+          "end": 125.031,
+          "text": "唤醒心底沉睡的恶魔",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 37,
+          "time": 125.031,
+          "start": 125.031,
+          "end": 128.797,
+          "text": "别想逃脱命运的漩涡",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S30",
+      "in_tc": "00:02:08:19",
+      "out_tc": "00:02:13:05",
+      "image": "output/storyboard-references/S30-v1.png",
+      "body_review": "保留",
+      "observation": "骷髅中近景不依据头骨占比推算全身。",
+      "effects_proposal": "审判段主效果起点：骨架本体微动，墙上影子大幅仰头。",
+      "typography_proposal": "右侧暗区固定位置“审判已经过”；130.709秒后清空。",
+      "lyric_overlaps": [
+        {
+          "id": 38,
+          "time": 128.797,
+          "start": 128.797,
+          "end": 130.709,
+          "text": "审判已经过",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S31",
+      "in_tc": "00:02:13:05",
+      "out_tc": "00:02:17:13",
+      "image": "output/storyboard-references/S31-v1.png",
+      "body_review": "保留",
+      "observation": "俯拍下坐站差异保留，不拉高坐者。",
+      "effects_proposal": "延续S30离体骨影，保持同一光源逻辑。",
+      "typography_proposal": "左上暗区“无需再闪躲”；135.485秒后清空。",
+      "lyric_overlaps": [
+        {
+          "id": 39,
+          "time": 133.193,
+          "start": 133.193,
+          "end": 135.485,
+          "text": "无需再闪躲",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S32",
+      "in_tc": "00:02:17:13",
+      "out_tc": "00:02:21:17",
+      "image": "output/storyboard-references/S32-v1.png",
+      "body_review": "保留尺度",
+      "observation": "上层骨群以石栏遮挡为自然尺度。",
+      "effects_proposal": "影子爬向拱顶，强化高度。",
+      "typography_proposal": "右侧暗墙“谁又能逃脱”；139.721秒后清空。",
+      "lyric_overlaps": [
+        {
+          "id": 40,
+          "time": 137.554,
+          "start": 137.554,
+          "end": 139.721,
+          "text": "谁又能逃脱",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S33",
+      "in_tc": "00:02:21:17",
+      "out_tc": "00:02:25:02",
+      "image": "output/storyboard-references/S33-v1.png",
+      "body_review": "轮廓优化",
+      "observation": "人物躯干较紧凑且下身隐藏；修正腿部可读性，保留远景尺度。",
+      "effects_proposal": "审判段收束：多层骨影如巨型荆棘栅栏围住大厅，属于影子而非实体锁链。",
+      "typography_proposal": "右侧暗墙“命运的枷锁”，与影子错开。",
+      "lyric_overlaps": [
+        {
+          "id": 41,
+          "time": 141.72,
+          "start": 141.72,
+          "end": 145.065,
+          "text": "命运的枷锁",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S34",
+      "in_tc": "00:02:25:02",
+      "out_tc": "00:02:29:15",
+      "image": "output/storyboard-references/S34-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "保留人物表演。",
+      "effects_proposal": "特效退去形成第二次蓄势。",
+      "typography_proposal": "沿用S10相近文字结构，降低动画幅度。",
+      "lyric_overlaps": [
+        {
+          "id": 42,
+          "time": 145.065,
+          "start": 145.065,
+          "end": 147.38,
+          "text": "时间是一把生锈的锁",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 43,
+          "time": 147.38,
+          "start": 147.38,
+          "end": 149.62,
+          "text": "困住你还是困住了我",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S35",
+      "in_tc": "00:02:29:15",
+      "out_tc": "00:02:34:00",
+      "image": "output/storyboard-references/S35-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "侧面特写保留，不用身体调整。",
+      "effects_proposal": "保持环境静止。",
+      "typography_proposal": "右侧或下方暗区，末句需跨S36继续显示。",
+      "lyric_overlaps": [
+        {
+          "id": 44,
+          "time": 149.62,
+          "start": 149.62,
+          "end": 151.82,
+          "text": "黎明是一种苍白的罪过",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 45,
+          "time": 151.82,
+          "start": 151.82,
+          "end": 157.146,
+          "text": "只有暗夜才真正懂我",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": true
+        }
+      ]
+    },
+    {
+      "id": "S36",
+      "in_tc": "00:02:34:00",
+      "out_tc": "00:02:37:04",
+      "image": "output/storyboard-references/S36-v1.png",
+      "body_review": "无人体可评",
+      "observation": "花瓣与布料细节。",
+      "effects_proposal": "花瓣悬停一瞬，为高潮逆升作预兆。",
+      "typography_proposal": "“只有暗夜才真正懂我”继续到157.146秒。",
+      "lyric_overlaps": [
+        {
+          "id": 45,
+          "time": 151.82,
+          "start": 151.82,
+          "end": 157.146,
+          "text": "只有暗夜才真正懂我",
+          "source": "歌词.srt",
+          "carried": true,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S37",
+      "in_tc": "00:02:37:04",
+      "out_tc": "00:02:42:08",
+      "image": "output/storyboard-references/S37-v1.png",
+      "body_review": "近中景不评身高",
+      "observation": "肩领夸张已明显；不用再扩大肩宽。",
+      "effects_proposal": "主角后方巨大吸血鬼影子展开，为最大奇观起势。",
+      "typography_proposal": "伸出的手之外保留“把理智都吞没”；字随高音一次放大后稳定。",
+      "lyric_overlaps": [
+        {
+          "id": 46,
+          "time": 157.146,
+          "start": 157.146,
+          "end": 162.338,
+          "text": "把理智都吞没",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S38",
+      "in_tc": "00:02:42:08",
+      "out_tc": "00:02:46:12",
+      "image": "output/storyboard-references/S38-v1.png",
+      "body_review": "保留尺度",
+      "observation": "极远景小人维持建筑尺度，不能统一放大。",
+      "effects_proposal": "第二主奇观：彩窗投影脱离地面，在上空展开横跨三层回廊的巨型暗红玫瑰光影，配逆升灰烬；建筑主体保留。",
+      "typography_proposal": "右侧上部留出整块暗区，分句显示“在那猩红夜色／旋转着坠落”，不压在玫瑰光影上。",
+      "lyric_overlaps": [
+        {
+          "id": 47,
+          "time": 162.338,
+          "start": 162.338,
+          "end": 164.3,
+          "text": "在那猩红夜色",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 48,
+          "time": 164.3,
+          "start": 164.3,
+          "end": 166.48,
+          "text": "旋转着坠落",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S39",
+      "in_tc": "00:02:46:12",
+      "out_tc": "00:02:50:18",
+      "image": "output/storyboard-references/S39-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "保留表情。",
+      "effects_proposal": "仅在脸侧保留高潮光影闪动，画面回到主角。",
+      "typography_proposal": "右侧暗区两行，不铺满画面。",
+      "lyric_overlaps": [
+        {
+          "id": 49,
+          "time": 166.48,
+          "start": 166.48,
+          "end": 168.68,
+          "text": "亲吻你的轮廓",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 50,
+          "time": 168.68,
+          "start": 168.68,
+          "end": 170.74,
+          "text": "冰冷且脆弱",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S40",
+      "in_tc": "00:02:50:18",
+      "out_tc": "00:02:54:07",
+      "image": "output/storyboard-references/S40-v1.png",
+      "body_review": "全身校准",
+      "observation": "正面全身可读，但头发肩领仍重；与S23、S45统一头、胯、膝、脚位置。",
+      "effects_proposal": "延续S38的上方玫瑰光影，避免又回到普通城堡窗光。",
+      "typography_proposal": "右侧暗区“大字灾祸＋小字完整前句”，按170.740/172.718秒换句。",
+      "lyric_overlaps": [
+        {
+          "id": 51,
+          "time": 170.74,
+          "start": 170.74,
+          "end": 172.718,
+          "text": "是一场永恒的",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 52,
+          "time": 172.718,
+          "start": 172.718,
+          "end": 174.28,
+          "text": "华丽的灾祸",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S41",
+      "in_tc": "00:02:54:07",
+      "out_tc": "00:02:59:07",
+      "image": "output/storyboard-references/S41-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "极近景不调整人体。",
+      "effects_proposal": "保持眼神、牙尖与光影。",
+      "typography_proposal": "右侧不压眼嘴；“看着我”成为重点。",
+      "lyric_overlaps": [
+        {
+          "id": 53,
+          "time": 174.28,
+          "start": 174.28,
+          "end": 176.44,
+          "text": "别闪躲看着我",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        },
+        {
+          "id": 54,
+          "time": 176.44,
+          "start": 176.44,
+          "end": 179.282,
+          "text": "并没有所谓对错",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S42",
+      "in_tc": "00:02:59:07",
+      "out_tc": "00:03:03:19",
+      "image": "output/storyboard-references/S42-v1.png",
+      "body_review": "近中景不评身高",
+      "observation": "中景无法完整判断腿长。",
+      "effects_proposal": "高潮特效作为背景缓慢运动。",
+      "typography_proposal": "Ah艺术字适度延长，避免歌词排成一长串。",
+      "lyric_overlaps": [
+        {
+          "id": 55,
+          "time": 179.282,
+          "start": 179.282,
+          "end": 188.467,
+          "text": "Ah~",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": true
+        }
+      ]
+    },
+    {
+      "id": "S43",
+      "in_tc": "00:03:03:19",
+      "out_tc": "00:03:08:11",
+      "image": "output/storyboard-references/S43-v1.png",
+      "body_review": "俯拍需复核",
+      "observation": "高位小人腿部隐藏，不能确认实际比例；与S09/S21使用统一俯角和身体参照。",
+      "effects_proposal": "展示同一巨型玫瑰投影在空间中的悬浮与地面残影，作为S38高潮的另一视角。",
+      "typography_proposal": "继续Ah至188.467秒，文字置于右侧空地，不遮玫瑰主体。",
+      "lyric_overlaps": [
+        {
+          "id": 55,
+          "time": 179.282,
+          "start": 179.282,
+          "end": 188.467,
+          "text": "Ah~",
+          "source": "歌词.srt",
+          "carried": true,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S44",
+      "in_tc": "00:03:08:11",
+      "out_tc": "00:03:11:07",
+      "image": "output/storyboard-references/S44-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "伸手邀请动作保留。",
+      "effects_proposal": "高潮收束，维持脸部可读。",
+      "typography_proposal": "右侧暗区完整长句拆为两行，不只显示关键词。",
+      "lyric_overlaps": [
+        {
+          "id": 56,
+          "time": 188.467,
+          "start": 188.467,
+          "end": 191.287,
+          "text": "沉沦在这只属于我们的",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S45",
+      "in_tc": "00:03:11:07",
+      "out_tc": "00:03:16:00",
+      "image": "output/storyboard-references/S45-v1.png",
+      "body_review": "比例参考",
+      "observation": "全身腰腿与鞋较清楚，相对修长，可作为校准参考。",
+      "effects_proposal": "第三主奇观的终点：巨型玫瑰光影在王座后收成冠冕般轮廓，灰烬由逆升转为落下。",
+      "typography_proposal": "“王国”放在人物右侧上部，191.287–194.610秒；结束后退场。",
+      "lyric_overlaps": [
+        {
+          "id": 57,
+          "time": 191.287,
+          "start": 191.287,
+          "end": 194.61,
+          "text": "王国",
+          "source": "歌词.srt",
+          "carried": false,
+          "continues": false
+        }
+      ]
+    },
+    {
+      "id": "S46",
+      "in_tc": "00:03:16:00",
+      "out_tc": "00:03:21:00",
+      "image": "output/storyboard-references/S46-v1.png",
+      "body_review": "保留",
+      "observation": "骷髅坐站关系保留。",
+      "effects_proposal": "留下不完全同步的影子余响。",
+      "typography_proposal": "现有SRT没有词，不凭歌词草稿补拉丁吟唱。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S47",
+      "in_tc": "00:03:21:00",
+      "out_tc": "00:03:25:19",
+      "image": "output/storyboard-references/S47-v1.png",
+      "body_review": "优先修正",
+      "observation": "背侧站姿下肩领宽、身体窄短，腿和脚被拖尾吞没；需打开步态和衣摆，明确成年修长比例。",
+      "effects_proposal": "回归正常重力与缓步。",
+      "typography_proposal": "尾段无明确唱词，留白。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S48",
+      "in_tc": "00:03:25:19",
+      "out_tc": "00:03:28:19",
+      "image": "output/storyboard-references/S48-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "保留侧面脸与耳朵。",
+      "effects_proposal": "少量落灰即可。",
+      "typography_proposal": "尾段无明确唱词，留白。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S49",
+      "in_tc": "00:03:28:19",
+      "out_tc": "00:03:33:12",
+      "image": "output/storyboard-references/S49-v1.png",
+      "body_review": "轮廓优化",
+      "observation": "人物比例被长袍合并成锥形；保持小人物，同时显出裤腿或鞋的受力点。",
+      "effects_proposal": "花瓣下落作为前段逆升的结果。",
+      "typography_proposal": "尾段留白。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S50",
+      "in_tc": "00:03:33:12",
+      "out_tc": "00:03:38:00",
+      "image": "output/storyboard-references/S50-v1.png",
+      "body_review": "近景不评身高",
+      "observation": "表情与麦克风收势可保留。",
+      "effects_proposal": "特效退出。",
+      "typography_proposal": "尾段留白。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S51",
+      "in_tc": "00:03:38:00",
+      "out_tc": "00:03:42:12",
+      "image": "output/storyboard-references/S51-v1.png",
+      "body_review": "轮廓优化",
+      "observation": "背面全靠外衣推断身体；保持肩腰关系，不沿着拖尾长度推算腿长。",
+      "effects_proposal": "纹样仍是服装图案，不新增枝条生长。",
+      "typography_proposal": "无词留白，保留玫瑰纹样。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S52",
+      "in_tc": "00:03:42:12",
+      "out_tc": "00:03:47:00",
+      "image": "output/storyboard-references/S52-v1.png",
+      "body_review": "保留",
+      "observation": "前景骷髅蜷身是姿态，不判成身高异常。",
+      "effects_proposal": "正常骨影逐渐重合本体。",
+      "typography_proposal": "尾段留白。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S53",
+      "in_tc": "00:03:47:00",
+      "out_tc": "00:03:52:19",
+      "image": "output/storyboard-references/S53-v1.png",
+      "body_review": "保留尺度",
+      "observation": "极远景不可测量人体比例；小人物维持。",
+      "effects_proposal": "最后少量花瓣落地，结束奇观系统。",
+      "typography_proposal": "尾段留白。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S54",
+      "in_tc": "00:03:52:19",
+      "out_tc": "00:03:56:00",
+      "image": "output/storyboard-references/S54-v1.png",
+      "body_review": "近中景不评身高",
+      "observation": "中景保留收势。",
+      "effects_proposal": "恢复窗光与烛光。",
+      "typography_proposal": "尾段留白。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S55",
+      "in_tc": "00:03:56:00",
+      "out_tc": "00:04:00:00",
+      "image": "output/storyboard-references/S55-v1.png",
+      "body_review": "无全身可评",
+      "observation": "头骨近景不处理身高。",
+      "effects_proposal": "骨颌静止，仅烛火活动。",
+      "typography_proposal": "尾段留白。",
+      "lyric_overlaps": []
+    },
+    {
+      "id": "S56",
+      "in_tc": "00:04:00:00",
+      "out_tc": "00:04:02:05",
+      "image": "output/storyboard-references/S56-v1.png",
+      "body_review": "保留尺度",
+      "observation": "极远景用微小人影收尾，不放大。",
+      "effects_proposal": "空间暗下。",
+      "typography_proposal": "片名可在右侧暗区短暂回现；本镜仅约2.2秒，避免复杂入场。",
+      "lyric_overlaps": []
+    }
+  ]
+}

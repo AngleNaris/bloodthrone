@@ -1,0 +1,481 @@
+{
+  "completed_shots": 56,
+  "unique_png_images": 56,
+  "method": "内置image_gen，每镜独立生图",
+  "global_style": {
+    "title": "精致哥特恐怖音乐剧，B级录像带提供气氛",
+    "reference": "以MJ《Ghosts》《Thriller》式戏剧性恐怖音乐短片为主要参照，保留现有V6角色和城堡；B级惊悚录像带只提供阴森、陈旧与轻微不安。",
+    "frame": "2.35:1有效画面，目标1692×720；单镜单幅、画面铺满，不内嵌黑边、字幕或镜号。",
+    "lighting": "褪色灰蓝月光与少量暗暖烛光，深重阴影保留主体轮廓；酒红、灰蓝、炭黑、旧象牙白构成低饱和底色。红色与蓝色均压暗褪色，避免鲜红、电蓝和金亮反光。",
+    "materials": "真人化妆、厚丝绒、旧石墙与有重量的骨架道具。保留大块材质和主要轮廓，建筑减少细碎雕花、花纹与重复装饰；画面不堆满烛台、玫瑰和骨架。",
+    "detail_control": "每镜只有一个视觉重点，局部足够辨认，其余落入柔焦、阴影与烟雾。面孔以眼神和面骨为主，服装保留大玫瑰图形，不追加密集刺绣；远景强调拱顶、柱列和空地，不逐块描画砖石。禁止超清、过度锐化、HDR、满画面微纹理和概念图式细节堆叠。",
+    "performance": "主角精致、危险而有吸引力，眼神和姿态有戏剧性。骷髅错落、停顿、轻微僵直，每镜少数动作，跟随既定主唱／和声分工。",
+    "camera": "摄影机有重量，广角展示巨大纵深，近景用面骨、眼神与材质承接情绪；每镜只保留一种主要运镜。",
+    "finish": "参考图直接呈现旧镜头与录像转录的有限清晰度：整体柔和、细节有损失、暗部合并、高光轻微晕开，保留颗粒与轻微色彩渗出。主体靠轮廓、眼神和光比辨认，不做现代数字超清。动态串色、拖影、噪声与少量破损统一后期控制。",
+    "continuity": "沿用V6浅金长卷发、瘦削中性成年面孔、冷白皮肤、尖耳、红瞳、荆棘肩领和玫瑰拖尾。入口南、王座北、西侧彩窗、东侧石阶与回廊，城堡中连续表演。"
+  },
+  "display_ratio": "47:20 (2.35:1)",
+  "native_ratio_note": "原始生成像素比例接近2.35；文档以2.35:1窗口展示，原始PNG保留生成尺寸。",
+  "native_ratio_range": [
+    2.344322,
+    2.345543
+  ],
+  "checks": [
+    "56镜均关联独立且存在的PNG",
+    "每镜提示词包含细节、颜色、清晰度控制",
+    "无重复元素ID，播放器保留单进度条",
+    "SRT、连续帧数与74条音乐理解记录保持"
+  ],
+  "diagnostics": "无IDE/cclsp工具；Python编译与JS语法检查替代。",
+  "browser": "file协议被浏览器工具禁止；未绕过，未执行本地页面浏览器复测。",
+  "images": [
+    {
+      "id": "S01",
+      "image": "output/storyboard-references/S01-v2.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "aad22268b807bb2b0358f1c1eb7d6a9675a97f0aaae8498a69f4c5a7c71fff3c"
+    },
+    {
+      "id": "S02",
+      "image": "output/storyboard-references/S02-v2.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "b265e61d422652b3cf70db9a0d8667366dcd52b545c15905758b5517b5871973"
+    },
+    {
+      "id": "S03",
+      "image": "output/storyboard-references/S03-v2.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "747561001e2e351bdd79683b949653fe0678470f21defc94bd82004cad2814d3"
+    },
+    {
+      "id": "S04",
+      "image": "output/storyboard-references/S04-v2.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "2442e8aa1182ea9e56bcaa7495747543c127ff09f583aa2924436df2a415ca9d"
+    },
+    {
+      "id": "S05",
+      "image": "output/storyboard-references/S05-v2.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "2f3a00d58ca9663581b303a8033ef38759982a202a4a83aa13b32f369599c1f9"
+    },
+    {
+      "id": "S06",
+      "image": "output/storyboard-references/S06-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "35444f24205a9f6ccc5ca027cb636f9383567f2491f97169fb73ebb424bd7668"
+    },
+    {
+      "id": "S07",
+      "image": "output/storyboard-references/S07-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "6058486faa0db18e421f5567d56adc5afdb3fcbf2bc94e38eb68a913e6c5d76b"
+    },
+    {
+      "id": "S08",
+      "image": "output/storyboard-references/S08-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "43acb039dfe0db822801e3b605b6df75b4f9837f9542a428b2ac7ccd6d51fdaa"
+    },
+    {
+      "id": "S09",
+      "image": "output/storyboard-references/S09-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "d8f7c9594535f211450cebf3a648c5e86c276e768c713b1c383c9471d1ec5781"
+    },
+    {
+      "id": "S10",
+      "image": "output/storyboard-references/S10-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "b6428447b6dab691adc9a7eac3c47ffa268e1f2742c5ae5d68d8368ac2e98fd7"
+    },
+    {
+      "id": "S11",
+      "image": "output/storyboard-references/S11-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "3def562c1244ca6c56e885b22f5f10df13253b580006cfe3661f3df5821f94d2"
+    },
+    {
+      "id": "S12",
+      "image": "output/storyboard-references/S12-v2.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "20151ed05fb4b5011ba93584c8e872f597da6138697bbf9c08261a60ff8ce5f4"
+    },
+    {
+      "id": "S13",
+      "image": "output/storyboard-references/S13-v2.png",
+      "width": 1921,
+      "height": 819,
+      "native_ratio": 2.345543,
+      "sha256": "bf420ab43410e8197a6c5d52efacc4e79c059a04c8bbab797a307fc0133d58a0"
+    },
+    {
+      "id": "S14",
+      "image": "output/storyboard-references/S14-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "96d5f7b905941af8dcae0b4b8021c81e372da153085af79fa66f063686ea93e2"
+    },
+    {
+      "id": "S15",
+      "image": "output/storyboard-references/S15-v2.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "26d5fba88da617f25d38fed1d836496ace5bfc970cf0e5d99fa9c48751f1ecad"
+    },
+    {
+      "id": "S16",
+      "image": "output/storyboard-references/S16-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "f2e5604a7f9eea8fedef3395e6688aa40dd86ec0cebb75d14875a8752382a46a"
+    },
+    {
+      "id": "S17",
+      "image": "output/storyboard-references/S17-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "db334235f37dc642003b0fd2085afa2b678e36098e8b469fbed97a16253463fd"
+    },
+    {
+      "id": "S18",
+      "image": "output/storyboard-references/S18-v1.png",
+      "width": 1921,
+      "height": 819,
+      "native_ratio": 2.345543,
+      "sha256": "cad2b3daa347f81d46d5cf4906df2331dfc3edd653d0080d575d6c6a209a20f5"
+    },
+    {
+      "id": "S19",
+      "image": "output/storyboard-references/S19-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "2e02a43b256a7328607d93a913a4f7d742fab68bd4c996e2acc418b0604e489e"
+    },
+    {
+      "id": "S20",
+      "image": "output/storyboard-references/S20-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "7519f71401963874913521b62ce1eff26f3aaed0cb9a48979ef01105b3b09889"
+    },
+    {
+      "id": "S21",
+      "image": "output/storyboard-references/S21-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "acc5c1fb8b2b2fec70f48d9cfb9085eeb8683c1ad96ca80b1166f19574e9fb53"
+    },
+    {
+      "id": "S22",
+      "image": "output/storyboard-references/S22-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "eec8397db0b2b7f0e3636412798f8dd67fa85ed73d910399d995141be65242bf"
+    },
+    {
+      "id": "S23",
+      "image": "output/storyboard-references/S23-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "25e35e1dbaa235a672de4ee7fd1bbc3a927d12def8a5b6baad07c50a21dc5258"
+    },
+    {
+      "id": "S24",
+      "image": "output/storyboard-references/S24-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "aa37bab4e16a4e671aefbe20f044a946856b9b3849adad265c164d3fcadc512c"
+    },
+    {
+      "id": "S25",
+      "image": "output/storyboard-references/S25-v1.png",
+      "width": 1921,
+      "height": 819,
+      "native_ratio": 2.345543,
+      "sha256": "58cddbb8937e28bc39d2b3d5bd2071f8c37d3d9dd971f4afcf9e59b5cf483130"
+    },
+    {
+      "id": "S26",
+      "image": "output/storyboard-references/S26-v1.png",
+      "width": 1921,
+      "height": 819,
+      "native_ratio": 2.345543,
+      "sha256": "82f952c1596de3bbe3e8d99ffe9e3ffb3b41c0c721ea2e8374835397ed51562e"
+    },
+    {
+      "id": "S27",
+      "image": "output/storyboard-references/S27-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "e06938d547ced0c73672c4b7a017df0a1e23c0fc4d0a49d10c54bca8f50f5cf1"
+    },
+    {
+      "id": "S28",
+      "image": "output/storyboard-references/S28-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "33d943d319fd7710fc6c88debd4b2f22784438b745caa1f4afc49d422fe35ddb"
+    },
+    {
+      "id": "S29",
+      "image": "output/storyboard-references/S29-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "c538ad7b0f06d624235a6433a6c81243c5ee88850fbcdf3c805c29fed094561e"
+    },
+    {
+      "id": "S30",
+      "image": "output/storyboard-references/S30-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "ab02bf4d9bc0c05381de4e77f61921c0cb03d016d6cb95c0743e131eb0d8b4ec"
+    },
+    {
+      "id": "S31",
+      "image": "output/storyboard-references/S31-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "820946bbd2e2eaad743a1f0b40ed5c529f01a31b949ce71be31125086974f9a0"
+    },
+    {
+      "id": "S32",
+      "image": "output/storyboard-references/S32-v1.png",
+      "width": 1921,
+      "height": 819,
+      "native_ratio": 2.345543,
+      "sha256": "14cc1f4250110510d60bbae120dd7fb10c35a5c3cbe49286d0505d1f64e37dbf"
+    },
+    {
+      "id": "S33",
+      "image": "output/storyboard-references/S33-v1.png",
+      "width": 1921,
+      "height": 819,
+      "native_ratio": 2.345543,
+      "sha256": "795f429e455d4b9a0c30e96d4625a80fd09ddb3176331b032d5837c948b6a965"
+    },
+    {
+      "id": "S34",
+      "image": "output/storyboard-references/S34-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "f243d21b794266cecd88b99c89bd8f1d681ed22e420bc0032b9617e598c679b8"
+    },
+    {
+      "id": "S35",
+      "image": "output/storyboard-references/S35-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "a1c5261144ff396a25a1269e5079bd5c7b301db11a097bd9c1987d9258e693f2"
+    },
+    {
+      "id": "S36",
+      "image": "output/storyboard-references/S36-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "e3285b8446a74d093ca154ee8c15667d7829a6fa15e40f234dd9d7d3f5d8516c"
+    },
+    {
+      "id": "S37",
+      "image": "output/storyboard-references/S37-v1.png",
+      "width": 1921,
+      "height": 819,
+      "native_ratio": 2.345543,
+      "sha256": "9777433c060bf76e087505a945cb8e81a44bec71ca7be1c1e31801f8deebbdc0"
+    },
+    {
+      "id": "S38",
+      "image": "output/storyboard-references/S38-v1.png",
+      "width": 1921,
+      "height": 819,
+      "native_ratio": 2.345543,
+      "sha256": "48843e083b41ca3889a450da706fd36c6d7dad815c2de1eed6541645581624bb"
+    },
+    {
+      "id": "S39",
+      "image": "output/storyboard-references/S39-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "db31418c8d76502c00870f0efc937dd153e393163303b7242562dee197ad10fa"
+    },
+    {
+      "id": "S40",
+      "image": "output/storyboard-references/S40-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "a1208b77b01d57af2b7426115d8345b3439f2059339ce05b5a395b8da19efe56"
+    },
+    {
+      "id": "S41",
+      "image": "output/storyboard-references/S41-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "2482d4412e36ce7c97e2b13692f2470c29b91e02ff42852f50d085fc0f9dae17"
+    },
+    {
+      "id": "S42",
+      "image": "output/storyboard-references/S42-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "d1a087e39479a7aa60b7d8b871a5730afc61aca460a91e6ce374ab33c410f1b7"
+    },
+    {
+      "id": "S43",
+      "image": "output/storyboard-references/S43-v1.png",
+      "width": 1921,
+      "height": 819,
+      "native_ratio": 2.345543,
+      "sha256": "20c94394ab6a6bff3a3bdd9280838b8146916b583dcec012e58f97e68e15ccce"
+    },
+    {
+      "id": "S44",
+      "image": "output/storyboard-references/S44-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "01171113732c2749a360855d393f21042f6bf7de69e7d04cf85c10d337148b0d"
+    },
+    {
+      "id": "S45",
+      "image": "output/storyboard-references/S45-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "e936b33f9b8fa8ce5d950544d641551df8888479900b6a4a82f377e7850b2a7e"
+    },
+    {
+      "id": "S46",
+      "image": "output/storyboard-references/S46-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "ec3eab0e150618b1de1a141e7e1bf8e4481ceabf1fab9b5697cc4e87bc83a653"
+    },
+    {
+      "id": "S47",
+      "image": "output/storyboard-references/S47-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "56195a830feec9696b5ce413a7d4da7f54328a14206a988919d42ea92c1fbaaf"
+    },
+    {
+      "id": "S48",
+      "image": "output/storyboard-references/S48-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "39d95361568391a892e0a19260620422ba6569edad600ea27cecd35a5b4f985e"
+    },
+    {
+      "id": "S49",
+      "image": "output/storyboard-references/S49-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "1fe03b14dbe28c6246837134e49062cc93898cf2460745caad44d22071226a3d"
+    },
+    {
+      "id": "S50",
+      "image": "output/storyboard-references/S50-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "ce5acafbce9029b004316f5c7aa13e6cfded3990e4b9f1ddda72b42362b9ab7f"
+    },
+    {
+      "id": "S51",
+      "image": "output/storyboard-references/S51-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "8e7330dc7a20c7285133e84ae6ef7bb99e93a6aa5b9cc6487aafc91d7cdfa896"
+    },
+    {
+      "id": "S52",
+      "image": "output/storyboard-references/S52-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "c8bfee7b315d2b405ea7240bbbfeeadbc0491a4c16e2dff493f771c7b5537881"
+    },
+    {
+      "id": "S53",
+      "image": "output/storyboard-references/S53-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "eda29e47ad65bcb8f67801a15f60c2be696dc3cbbec7b42f8c679f500d292532"
+    },
+    {
+      "id": "S54",
+      "image": "output/storyboard-references/S54-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "fdb13d65b9f92bac41ebd41255395cef8fa2fcb5209fe9b8fa2967497d83fd75"
+    },
+    {
+      "id": "S55",
+      "image": "output/storyboard-references/S55-v1.png",
+      "width": 1921,
+      "height": 819,
+      "native_ratio": 2.345543,
+      "sha256": "3a694a9582b1d283dc78a303d1e5fa2546c91262dcb58e4953d9ba06f58cc53d"
+    },
+    {
+      "id": "S56",
+      "image": "output/storyboard-references/S56-v1.png",
+      "width": 1920,
+      "height": 819,
+      "native_ratio": 2.344322,
+      "sha256": "26ed225a8e58abda6d3c30157d599abda9d2a8d309c48384afeba98dd308564a"
+    }
+  ]
+}
